@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hotpink;
+}
+body .flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+body .flex-container .card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+body .flex-container .card--border-green {
+  border: 2px solid #00FFB2;
+}
+body .flex-container .card .card__img {
+  width: 100%;
+  height: auto;
+}
+body .flex-container .card .card__body {
+  padding: 20px;
+  background-color: white;
+}
+body .flex-container .card .card__body .card__header {
+  display: flex;
+  justify-content: space-between;
+}
+body .flex-container .card .card__body .card__header .card__button {
+  font-size: 8px;
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  width: 50px;
+}
+body .flex-container .card .card__body .card__header .card__button--sale:hover {
+  background-color: #00FFB2;
+}
+body .flex-container .card .card__body p {
+  margin: 5px;
+  font-size: 10px;
+  color: gray;
+}
+body .flex-container .card .card__body .card__buttons {
+  margin-top: 20px;
+}
+body .flex-container .card .card__body .card__buttons .card__button {
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  margin-right: 20px;
+  width: 120px;
+}
+body .flex-container .card .card__body .card__buttons .card__button--book {
+  background-color: black;
+  color: white;
+  border: none;
+}
+body .flex-container .card .card__body .card__buttons .card__button--info {
+  background-color: white;
+  border: 0.75px solid black;
+}/*# sourceMappingURL=main.css.map */

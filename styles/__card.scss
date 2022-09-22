@@ -1,0 +1,90 @@
+@use "./_variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: $primary-color;
+
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            width: 400px;
+
+            &--border-green {
+                border: 2px solid #00FFB2;
+            }
+        
+            .card__img {
+                width: 100%;
+                height: auto;
+            }
+    
+            .card__body {
+                padding: 20px;
+                background-color: white;
+
+                .card__header {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .card__button {
+                        font-size: 8px;
+                        padding: 5px;
+                        text-decoration: none;
+                        border: none;
+                        border-radius: 20px;
+                        width: 50px;
+
+                        &--sale:hover {
+                            background-color: #00FFB2;
+                        }
+                    }
+                }
+    
+                p {
+                    margin: 5px;
+                    font-size: 10px;
+                    color: $secondary-color
+                };
+    
+                .card__buttons {
+                    margin-top: 20px;
+    
+                    .card__button {
+                        font-size: 16px;
+                        padding: 10px;
+                        text-decoration: none;
+                        margin-right: 20px;
+                        width: 120px;
+
+                        &--book {
+                            background-color: black;
+                            color: white;
+                            border: none;
+                        }
+
+                        &--info {
+                            background-color: white;
+                            border: 0.75px solid black
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
